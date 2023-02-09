@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program do szyfrowania i deszyfrowania</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/031c32ddc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Praca zaliczeniowa bezpieczeństwo informacji 3895</h1>
+    <div class="all">
+    <div class="left">
+    <label for="converter">algorytm cezara  <span class="one">szyfrowanie</span></label>
+    <p><input onkeydown="return /[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]/i.test(event.key)" id="converter" placeholder="Wpisz tekst..."></p>
+    <input type="number" id="key" placeholder="Wpisz liczbę przesunięcia">
+    <p class="result"></p>
+    
+    <div>
+        <button class="conv">Szyfruj</button>
+        <button class="reset">Reset</button>
+        <button class="change">Zmień tryb</button>
+    </div>
+</div>
+<div class="right">
+    <label for="converter2">nie działa😔 - algorytm plecakowy <span class="two">szyfrowanie</span></label>
+   <p> <input type="number" id="converter2" placeholder="Wpisz wagę elementu"></p>
+    <input class="input2" type="number" id="key2" placeholder="Wpisz wartość elementu">
+    <p class="result2"></p>
+    
+    <div>
+        <button class="conv2">Szyfruj</button>
+        <button class="reset2">Reset</button>
+        <button class="change2">Zamień tryb</button>
+    </div>
+</div>
+
+</div>
+<script src='script.js'></script>
+</body>
+</html>
